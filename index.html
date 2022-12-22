@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Amazon.in</title>
+    </head>
+    <body style="font-family: Arial, Helvetica, sans-serif;">
+        <table border ="1" width="100%">
+            <!-- Header Starts -->
+            <tr>
+                <td>
+                    <table style="width:100% ;">
+                        <!-- heafer 1st row -->
+                    <tr>
+                        <td style="background-color:black ; color: white;" >
+                                <table style="width:100%;" >
+                                    <tr>
+                                        <td width="20%"  >
+                                        <table style="width:100% ;">
+                                           <tr>
+                                            <td>
+                                               <img width="100%" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAABL1BMVEUAAAD////8/PwAAANvb29YWFj5+fnq6upoaGgAAAYAAwCGhoZGRkZVVVVjY2NBQUH/gwB9fX2xsbHMzMzk5OT/ggDx8fEjIyPb29ucnJzQ0NC7u7tPT0/ExMQ1NTUHAACoqKiRkZEqKioQEBAaGhopKSn6hQZ3d3eXl5ehoaEzMzOBgYEAAA0QAADUfx6Li4tiPxzsjSfxixpXMhEsEgRCJgpNMRIxGAV+ShejZCTHfCzjjCzqiiucZzBlOBQwHBG2cSv3ixR7TiTEhUuITxIYAArEdiVcPybbkklLNiWUaT9OLgswIAcjGAIYEQAdEACLWCWjWx90Oxf7iSTTiiyOXBc8HQu9aSWsaTPjgi7EhDX0kAW7cySEUCIgBQFbPw2abSVcNRehZxhnLRpNOBjzlERKAAAMeElEQVR4nO2ai1/bRhLHZcmRLMdg44cwNn7xkA0YiE1MwCZgcZS217Qlz7sU4l569///Dbe72pmVhEOK49gJn/nyIUGv1eqnmdmZXWkaQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRAE8QnWFxvlIqOU3UndcdpmvLHSaqbVjmqztdKIL487d3WnXuJNlhuPJunRo6XGVmtnceOuc9LN1lajuT1J85OzWnZiiFncCR6rW3lOZZ1JlfVPMytV/9hCzhQ7nHI60uJmI6+rJq2tauDYctEaRyNwSipryUudSkjq7ZLojcW7mIK7V6J3/4psZPUY/1EUA9YF+1NayorpfIv9Ogv8UAuu0mNmM9TkjuOfJ9FjzmN1MBUbS0mdURcN6/6lscqmOhKXJ+fYnya2bsa/ijBjSFuxiFbs7ot42PT7rKe2HZCGSeawl9lSerD/g2qVo0Kw43U8+gmxcnC8Woyh1Lp6NYK43JvTFvw3J/oT7O9XJW1hdwOCOWtwHASqViJ2sBh+VkeFDqWVHmgSbeszlrVm3TqktADLqmjF0Bn59VlopZVCRoWyleG4FMvciZyXKEWssQ5X7INGoeO6A970GbFKAYnhDwdiHoq1E+nv0iy0ehwD1zeLuaKDHTWhe2DrTthVY07UdYvygjUHo02+VLLUCft3iyVfTx3PN/MO/g1KglilfOTqnDYD8uLJmER17kabZVQAYiaIpQIuPn5YrJgc5VuonhjHdkzYhufZyOWBoqXizqo4mJYxMqavbGsbixZc3AyLdevu1gy0wre8InfkojtUn8xss1kOuoheebxfUcflAA7BpCjDCPpvfsz9VXjbCu5gV/h2WHXktrwYxWKGl00ksqo7a2NanzIt+STgQypsQ9DC3jirod7CIJVAa/MToipcsApNWtJWnNtBuIkPK/1s2ZRSQIdacLeEFrw900q0v4Sj5l259JRIWGbwvXI3kN0Bp4HREEJOBbvbhB3ygf0haxlSRbxHCa64lY0vY3hzpFkuQeOQGFehP/7LU2LJwRUHxVkkDxvV9OLSVh2NeA2CKoRUDCrSLprQO4gS+9HubqcX4o1sAm+BOcetqqiCkQe0gSigo6FAJPftEg0b3kUDXtXM8tIAyyBWxLLQL1ahu+Cn8bAb3gbjUlSsfRw0KnLPOkhjRa/W9Uf+zSJ3T8COpjZrltPxT4kFz5OGKAMjAHZ3rFgb1RS4YVSsFHhYzIIjKWgcYyikEnpM1I4oFpjiAlwxS7HSSyvlkuWYGM+jYsGrxKAGhS8OCRGxNhOtbC7vmCb6WkSsIkZ3dFlsSxWKGOHrfAvFAq9DxWeSlXIeZa1g1jJGrFgsK7dRLChfxlpWdaVoqrbGirWFTljHfZiXV6K7ZJoWj95s1mIlwmXWWLF0JRaod4dY22VMYIMvISSWKi2VyykzUmKhPPnQ1pzEquMThazrk5b1ebESTji/HifWBtRBurmq9m7BqViaquZFzEexYCJitmKVA3VMvpjLwVNOLlY8ILtVLFWscW6o6qrgpN8YsdACHdn2HMWS3WOWUNzhydY6vPGJxVrFYtDaEtlSeYxYTZxHDFXAK9CWcsPxlqXPQ6wUdrrl79gcnzrcQ6wiaFWSM1xjxJIlH69aQjXdY2hLjYZoS8Xg1lzEKoNYdblj7UvFwhwV5+PGiJWTQU2PpEdhZQThAXKeYi3DrRyo26rja8O/L1Y5FpUBSxgUqxWDsAatSrA8UDMU6JmifJ2nWPigGFCxu5Ha8G+LhbN9OMeAmYnK03U5cxidDcZiC3N6LSvV8dWYp1jh9JiDdfKEYm2AzZh4E1xmg/Ck8jqnWMyVt5bU9D0GPMwnwC79qdt5ioVDdR324BQBOMI9xarCFoqlZsDkCFCP3cKqS3Fgfg3noDdBjGKosbmKBREqpRbj5KNNKhY6HdbRsontQB3k30oMMTkhVxoMEyI8jo9+OjZPsTB6wvqEejJIde7vhlJsmWzuqxbDnhTFn/8rweV+cb0BC9tybWieYqmOl3ioXauo3BtWl+4b4GEpVi72NVTdI2vh8CIWHpTDJ7bm8Ms3S7CeshXu8DzEWlNeZ2VbwS8edHjV9xUrh+vWZmUlWwwu4usi80XHitIMXR8zc9mKA9W4tT5/saBr+NECjx+6fJn+nNF9xVqKagCLaLzJnBBrXJGNiVnavF2F6zh9NdfacCEy18CKlLJYdtVhEePeUzThCR/+XcQKLtnwoLUTk/e0SrlKhS/syvNuLQ1iC1CLzbuQrkfeYwWeVpeD973FWgiNdsyDFtg4Iky3IsoE7oZ6PhuvyqJho9rM5oMp/+PIWreutJr3FE02FjQubk1i2sCEqV5dRo2/P0WTCKlV4tZUCrTA0t5ydN1qfbESmFyOWyG1nED9+InJP11Nyn9d4vjZgFnxU0NmG86tpShYn8CPXCCMwJRMDD8pq1Zw3Mj7L3w9F3Clx8Fvzwz4Ix2QZL2uhhozG/g8S3sEAkIb23DmjD460h61spVKsOpItdSXepuLAjVnXE2IHeqbqZR/RnBJuLpfZy3WG1i0JBv3e5iNpSz/PrCY3YkuCfk3U3qn/R2r2nwxjFrN+Pxp96am2TZrt/bD097h4eGzXbbLtsedOJtvrqZAUquxR0pqdnvaehkGa/HZ0XF/0Ol0O93uSf/5qdauTfkuM6XW1s7OjKQhjGCqtI3ak+FJ13PdTCYjfr3OOTOuKd9mltTau//oX/xgJJPJaTd9cNnlGnFcppjrFdzj71ss1vlh19s7mr4f/viT53YHncEegzmiyyUbTvcWs6Zm2Npxx+32T2vadNX6+Z9XR7/0Xvz6W+2335/1rgau6zHL+hojycxgYtna+YnL5Holdtht7ig8ik38XCyyi+jOBz/DYA0abU17yT3x7fctFsfQTt94Gbe7d/4DGx5tg3tkUjMmF0sMhZwaGz+4Zu2k/crzCt658V2PhgLD7l2+dt1C983bnthkT8mfakK5xLUaS0j4IKu9e/KibSftI9Z+pzf5G/h2MOxdFrgKGff65F9PRhofJIUzTtweE6VW44785N/vu388Yy09Z27YHz0EsViyzVzx2i0UPK+7d9GTufaEPmNA1vbuot9ho+CbHmv+huUOz79A/28H5jFtbXTcEQlRxuv0r3q72uRRi19Ye/fBz7PcwbmWbI8GBbd7yAuGqXZ8HghZ2u3TvetM4drNMH8c9I9PR9zAbC3JYhAzFn6eyFyTws2Y8Uj4ARHjkuKHMzq44Ml7plAodP84YOHL+JOlpJe7bOT4/sXysZlxDTyePIq0u9sffuiNxBEuAUsBbK6RbQQtjgdxvpNVAEnDaPPM9uz8+JJVOczt2O/J8UgzWJ3+n0zB+6C17YeiFSup21rvLzYsMphN8Gquuzf88PGsxocAPw5xUZIyM7AFzKh4MsWl1J4dHv31ZuB5vtqFTPfmHb+ypo3eu5m9kWbXHoxYvsl8vGGhRggmajrv9euTy+HVweEZnOZrhB7oF3uj3sHRXzcnHaGT6/P6/amfcWna6Wuvy0qqB5BmAUk+3LNn/7PfFdMEBfYj62A2SL6/vDm+evXxsPfs6Ug+8+7o7Ozng9Oj4+HNXofPL7holey//vkuc08/SA3d6z927S9KR74xeNRhuTv7PbjpeDCxwi2MPX7B9TXrdvzaWDAYdDqetEF+klSLbXYuj3a1tuG7rNbrFN6/4BZmPJigZfDRruaPjb88f9P1rYRbGIqQKYCxZTJq+oWJmBFW6Nuj650MT3d5HcCrJh7LXl6//68YJR5CUnobQ3v64fJE2gzXCaxGiIYG5CuIcnL/87p9ltUaoXmrn96cag8oXkURY98Zy8BZ2iX9UBgVmpiK424gpvN89qM/dgZb+5Gpl2zP61m+OknNnzv95eLyRCZNAZmCrujvZvHK63aGFwd8XSJ5a96VJ2Lf9RzpnfgpFMtE29qvT676e91rz3MhfQrZF9eJWdSgf3X6TqpiG0YkOLUfrlKacEOWataShj8Z+PTg6OXlHrMxz8MMwZWj42Dv5vjof79z59PE+TZksIhhJ4321Cf5vyFEps7+qfH1P6FY7cXhwdHb4+Hw5lIwHB5fHL2CFUFDk4VhLQl/KYwHLhbxxchCh3lacNKBGIsopJlr1kT9TGLdCcw12JBJPdxU88uxhQOqbbKse0BiEQRBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBfKv8H9psJ5T/1WkoAAAAAElFTkSuQmCC"  />
+                                            </td>
+                                            <td>
+                                            <h5>Hello</h5> 
+                                            <h4>Select your address</h4>
+                                            </td>
+                                           </tr>
+                                        </table>
+                                        </td>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <select>
+                                                            <option value="1">
+                                                                All
+                                                            </option>
+                                                            <option value="1">
+                                                                1
+                                                            </option>
+                                                            <option value="2">
+                                                                2
+                                                            </option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <input style="width: 650px;" type="text" />
+
+                                                    </td>
+                                                    <td>
+                                                        <input type="button" value="Go" />
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                               
+                                            
+                                        </td>
+                                        <td width="25%">
+                                           <table width="100%">
+                                            <tr>
+                                                <td width="25%">
+                                                    <img width="15%" src="https://www.freeiconspng.com/thumbs/indian-flag-icon/indian-flag-icon-2.png" />
+                                                    <h12>EN</h12><select></select>
+                                                </td>
+                                                <td width="25%">
+                                                    <h5>Hello,Sign in</h5>
+                                                    <h4>Account&Lists</h4>
+                                                </td>
+                                            
+                                                <td width="25%">
+                                                    <h5>Returns</h5>
+                                                    <h4>&Orders</h4>
+                                                </td>
+                                                <td width="25%">
+                                                    <img width =70% src="data:image/png;base64,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" />
+                                                    <h12>Cart</h12>
+                                                </td>
+                                            </tr>
+                                           </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                        </td>
+                     </tr>
+                 <!-- First row end -->
+                 <!-- Second row starts -->
+                <tr>
+                   <td style="background-color:#17171d; color: white;">
+                    <table width="100%">
+                        <tr>
+                            <td >
+                                <table width="100%">
+                                    <tr>
+                                        <td>
+                                            <h5> All</h5>
+                                        </td>
+                                        <td>
+                                           <h5>Best Sellers</h5>
+                                        </td>
+                                        <td>
+                                            <h5>Mobiles</h5>
+                                        </td>
+                                        <td>
+                                         <h5>Today's Deals</h5>   
+                                        </td>
+                                        <td>
+                                            <h5>Customers Service</h5>
+                                        </td>
+                                        <td>
+                                            <h5>Electronics</h5>
+                                        </td>
+                                        <td>
+                                            <h5>Prime</h5>
+                                        </td>
+                                        <td>
+                                            <h5>Home & Kitchen</h5>
+                                        </td>
+                                        <td>
+                                            <h5>Fashion</h5>
+                                        </td>
+                                        <td>
+                                            <h5>New Releases</h5>
+                                        </td>
+                                        <td>
+                                            <h5>Books</h5>
+                                        </td>
+                                        <td>
+                                            <h5>Amazone Pay</h5>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td width="25%">
+                                <a aria-label="Amazon App" href="/b/?_encoding=UTF8&amp;node=6967393031&amp;ref_=nav_swm_IN_swm_appdownload&amp;pf_rd_p=ae25bba0-7638-444f-a748-97b8ac7c0e05&amp;pf_rd_s=nav-sitewide-msg&amp;pf_rd_t=4201&amp;pf_rd_i=navbar-4201&amp;pf_rd_m=A21TJRUUN4KGV&amp;pf_rd_r=F39KQTEEZEJ1TH495A69" class="nav-imageHref" tabindex="0">
+                                    <img alt="Amazon App" src="https://m.media-amazon.com/images/G/31/IN-hq/2021/img/Mobile_Traffic_/XCM_Manual_1321458_1651511_IN_3781247_400x39_en_IN._CB655944656_.jpg">
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                   </td>
+                </tr>
+            <!-- Second row ends -->
+            </table>
+         </td>
+             </tr>
+                        <!-- Header Ends -->
+                     
+                       <!-- Contents Starts -->
+            <tr>
+                <td style="background-color: rgb(244, 173, 173);" width="100%">
+                    <table width="100%">
+                          <!-- 1st table 1st row of content start -->
+                        <tr>
+                            <td width="50%"  >
+                              
+                                <table width="100%">
+                                    <tr>
+                                        <!-- 1stcolum of 1st table of row starts -->
+                                        <td style="background-color:white;" width="25%">
+                                            <table width="100%">
+                                                  <tr>
+                                                <td colspan="3" style="padding-left:30px ;">
+                                                    <h3>Revamp your home in style</h3>
+                                                </td>
+                                            </tr>
+                                           <tr>
+                                            <td>
+                                                <td>
+                                                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2021/GW/MSO/April/372x232_1_Low._SY116_CB670263840_.jpg"/>
+                                                    <h5>Bedsheets&Curtains</h5>
+                                                </td>
+                                                <td>
+                                                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2021/GW/MSO/April/372x232_2_Low._SY116_CB670263840_.jpg"/>
+                                                    <h5>Home decorations</h5>
+                                                </td>
+                                            </td>
+                                           </tr>
+                                           <tr>
+                                            <td>
+                                                <td>
+                                                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2021/GW/MSO/April/372x232_3_Low._SY116_CB670263840_.jpg"/>
+                                                    <h5>Home storage</h5>
+                                                </td>
+                                                <td>
+                                                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2021/GW/MSO/April/372x232_4_Low._SY116_CB670263840_.jpg"/>
+                                                    <h5>Lighting Solutions</h5>
+                                                </td>
+                                            </td>
+                                           </tr>
+                                            </table>
+                                          
+                                        </td>
+                                        <!-- 1stcloum of 1st row of content ends -->
+                                        <!-- 2ndcloum of 1st row of content starts -->
+                                        <td  style="background-color:white;" width="25%">
+                                            <table width="100%">
+                                                <tr>
+                                                    <td colspan="3" style="padding-left:30px ;">
+                                                        <h3>Top rated,Premium quality</h3>
+                                                    </td>
+                                                </tr>
+                                            <tr>
+                                                <td>
+                                                    <td>
+                                                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_1._SY116_CB606110532_.jpg"/>
+                                                        <h5>Home products</h5>
+                                                    </td>
+                                                    <td>
+                                                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_5._SY116_CB606110532_.jpg"/>
+                                                        <h5>Furniture</h5>
+                                                    </td>
+    
+                                                </td>
+    
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <td>
+                                                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_7._SY116_CB606110532_.jpg"/>
+                                                        <h5>Daily essentials</h5>
+                                                    </td>
+                                                    <td>
+                                                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/BAU/Oct/186X116_8._SY116_CB606110532_.jpg"/>
+                                                        <h5>Fashion</h5>
+                                                    </td>
+    
+                                                </td>
+    
+                                            </tr>
+                                                
+                                            </table>
+                                         
+                                        </td>
+                                        <!-- 2ndcloum of 1st row of content ends -->
+                                         <!-- 3rdcloum of 1st row of content starts -->
+
+                                        <td style="background-color:white;" width="25%">
+                                            <table width="100%">
+                                                <tr>
+                                                    <td colspan="2" style="padding-left:30px ;">
+                                                        <h3>Redefine your living room</h3>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src=https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Furniture/furniture_node_1/372_232_03_low._SY116_CB605507312_.jpg/>
+                                                        <h5>Sofa cum beds</h5>
+                                                    </td>
+                                                    <td>
+                                                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Furniture/furniture_node_1/372_232_04_low._SY116_CB605507312_.jpg"/>
+                                                        <h5>Office chares & Tables</h5>
+                                                    </td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Furniture/furniture_node_1/372_232_01_low._SY116_CB605507312_.jpg"/>
+                                                        <h5>Bean bags</h5>
+                                                    </td>
+                                                    <td>
+                                                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Furniture/furniture_node_1/372_232_02_low._SY116_CB605507312_.jpg"/>
+                                                        <h5>Explore all</h5>
+                                                    </td>
+
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        <!-- 3rdcloum of 1st row of content end -->
+                                        <!-- 4thcloum of 1st row of content starts -->
+
+                                        <td width="25%">
+                                            <table width="100%">
+                                                <tr>
+                                                
+                                                    <td style="background-color:white ; padding-top: 30px;padding-bottom: 30px;">
+                                                        <table  width="100%">
+                                                          <tr>
+                                                              <td style="text-align:center ;">
+                                                                  <h3>Sign in your best experience</h3>
+                                                              </td>
+                                                         </tr>
+                                                         <tr>
+                                                            <td style="text-align: center; padding-bottom: 20px;">
+                                                                <input style="background-color:yellow ;border-color: yellow; padding-left: 50px; padding-right: 50px; padding-top: 5px; padding-bottom: 5px;" type="button" value= "Sign in securely" />
+                                                         </td>
+                                                         </tr>
+                                                         
+                                                        </table>
+                                                      </td>
+                                                 </tr>
+                                                 <tr>
+                                                    <td style="height: 10px;"></td>
+                                                 </tr>
+                                            <tr>
+                                               <td >
+                                                <img src=https://m.media-amazon.com/images/G/31/img19/AMS/Houseads/Laptops-Sept2019._CB436595915_.jpg/>
+                                               </td>
+
+                                            </tr>
+                                            </table>
+                                            
+                                        </td>
+                                        <!-- 4thcloum of 1st row of content end -->
+
+                                    </tr>
+                                </table>
+                               
+                            </td>
+
+                        </tr>
+                     <!-- 1st table 1st row of content end -->
+                    <!-- 1st table  2nd row of content starts -->
+                    <tr>
+                        <td width="50%;">
+                            <table width="100%">
+                                <tr>
+                                    <!-- 1stcloum of 2nd row of content start -->
+
+                                    <td  style="background-color:white;width: 20%;">
+                                        <table width="100%">
+                                            <tr>
+                                                <td colspan="3" style="padding-left:30px ;">
+                                                    <h3>Up to 60% off | Styles for Women</h3>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                            <td>
+                                                <td>
+                                                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF1-186-116._SY116_CB636048992_.jpg"/>
+                                                    <h5>Women's Clothing</h5>
+                                                </td>
+                                                <td>
+                                                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF2-186-116._SY116_CB636048992_.jpg"/>
+                                                    <h5>Footwear+Handbags</h5>
+                                                </td>
+                                            </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <td>
+                                                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF4-186-116._SY116_CB636048992_.jpg"/>
+                                                        <h5>Watches</h5>
+                                                    </td>
+                                                    <td>
+                                                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF3-186-116._SY116_CB636048992_.jpg"/>
+                                                        <h5>Fashion jewllery</h5>
+                                                    </td>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </td>
+                                    <!-- 1stcloum of 2nd row of content end -->
+                                    <!-- 2ndcloum of 2nd row of content start -->
+
+                                    <td style="background-color: white;">
+                                        <table width="100%">
+                                            <tr>
+                                                <td colspan="4" style="padding-left:30px ;">
+                                                   <h3>Up to 60% off | Professional tools </h3>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <td>
+                                                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/AUTO_2021/BAU_GW/11x._SY116_CB606088141_.jpg"/>
+                                                        <h5>Professional tools</h5>
+                                                    </td>
+                                                     <td>
+                                                         <img src="https://images-eu.ssl-images-amazon.com/images/G/31/AUTO_2021/BAU_GW/21x._SY116_CB606088141_.jpg"/>
+                                                        <h5>Testing &instruments</h5>
+                                                    </td> 
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <td>
+                                                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/AUTO_2021/BAU_GW/31x._SY116_CB606088141_.jpg"/>
+                                                        <h5>Welding machines</h5>
+                                                    </td>
+                                                    <td>
+                                                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/AUTO_2021/BAU_GW/41x._SY116_CB606088141_.jpg"/>
+                                                        <h5>Handpicked offers</h5>
+                                                    </td>
+                                                </td>
+                                            </tr>
+
+                                        </table>
+                                    </td>
+                                    <!-- 2ndcloum of 2nd row of content end -->
+                                    <!-- 3rdcloum of 2nd row of content start -->
+
+                                    <td style="background-color:white ;">
+                                        <table width="100%">
+                                            <tr>
+                                                <td colspan="3" style="padding-left: 30px;">
+                                                    <h3>Exclusive offers on travel tickets</h3>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <td>
+                                                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/APAYMOVIE/PCQC/flight-1_186x116._SY116_CB606987228_.jpg"/>
+                                                        <h5>Get up to 2000 off on flight tickets</h5>
+                                                    </td>
+                                                    <td>
+                                                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/APAYMOVIE/PCQC/Train-2_186x116._SY116_CB606987228_.jpg"/>
+                                                        <h5>Zero convenience fees on train tickets</h5>
+                                                    </td>
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                <td>
+                                                    <td>
+                                                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/APAYMOVIE/PCQC/Bus-3_186x116._SY116_CB606987228_.jpg"/>
+                                                        <h5>Guaranteed rewards on bus tickets</h5>
+                                                    </td>
+                                                    <td>
+                                                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/APAYMOVIE/PCQC/travel_acces-4_186x116._SY116_CB606987228_.jpg"/>
+                                                        <h5>Products for your travel needs </h5>
+                                                    </td>
+                                                </td>
+
+                                            </tr>
+                                        </table>
+
+                                    </td>
+                                    <!-- 3rdcloum of 2nd row of content end -->
+                                    <!-- 4thcloum of 2nd row of content start -->
+                                    <td style="background-color:white ;">
+                                        <table width="100%">
+                                            <tr>
+                                                <td colspan="4" style="padding-left:30px ;">
+                                                    <h3>Electronics devices </h3>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <td>
+                                                        <img width="60%" src=https://images-eu.ssl-images-amazon.com/images/G/31/img21/PC/Computers/GW/DBQC/D21343116_IN_CEPC_BAU_GW_graphics_March21_dbqc0.5x_5._SY116_CB655805757_.jpg/>
+                                                        <h5>Smart watches </h5>
+                                                    </td>
+                                                    <td>
+                                                        <img width="60%" src=https://images-eu.ssl-images-amazon.com/images/G/31/img21/PC/Computers/GW/DBQC/D21343116_IN_CEPC_BAU_GW_graphics_March21_dbqc0.5x_6._SY116_CB655805757_.jpg/>
+                                                        <h5>Tablets</h5>
+                                                    </td>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <td>
+                                                        <img width="60%" src=https://images-eu.ssl-images-amazon.com/images/G/31/img21/PC/Computers/GW/DBQC/D21343116_IN_CEPC_BAU_GW_graphics_March21_dbqc0.5x_7._SY116_CB655805757_.jpg/>
+                                                        <h5>Laptops</h5>
+                                                    </td>
+                                                    <td>
+                                                         <img width="60%" src=https://images-eu.ssl-images-amazon.com/images/G/31/img21/PC/Computers/GW/DBQC/D21343116_IN_CEPC_BAU_GW_graphics_March21_dbqc0.5x_8._SY116_CB655805757_.jpg/>
+                                                         <h5>Monitors</h5>   
+                                                    </td>
+                                                </td>
+
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <!--4thcloum of 2nd row of content end -->
+
+                                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <!-- Content Ends -->
+            <!-- Footer Starts -->
+            <tr>
+                <td style="background-color: rgba(35, 38, 50, 0.967);" width="100%">
+                    <table width="100%"> 
+                    <tr>
+                        <td style="color:white ;">
+                           
+                                <table width="100%">
+                                    <tr>
+                                        <td style="padding-left:150px ;">
+                                            <h5>Get to Know Us</h5>
+                                            <h6>About Us</h6>
+                                            <h6>Careers</h6>
+                                            <h6>Press Releases</h6>
+                                            <h6>Amazon Science</h6>
+                                        </td>
+                                    </tr>
+                                   
+                                </table>
+
+                            </td>
+                            
+                            <td style="color:white ;">
+                                <table width="100%">
+                                    <tr>
+                                        <td style="padding-right:100px ; padding-top: 10px;">
+                                            <h5>Connect with Us</h5>
+                                            <h6>Facebook</h6>
+                                            <h6>Twitter</h6>
+                                            <h6>Instagram</h6>
+                                            <h6>Whatsapp</h6>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td style="color:white ;">
+                                <table width="100%">
+                                    <tr>
+                                        <td style="padding-right: 50px;">
+                                            <h5>Make Money With Us</h5>
+                                            <h6>Sell on Amazon</h6>
+                                            <h6>Sell under on Amazon Accelerator</h6>
+                                            <h6>Amazon Global Selling</h6>
+                                            <h6>Advertise Your Products</h6>
+                                            <h6>Become an Affilate</h6>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </td>
+                            <td style="color:white ;">
+                                <table width="100%">
+                                    <tr>
+                                        <td style="padding-right:30px ;">
+                                            <h5>Let Us Help You</h5>
+                                            <h6>COVID-19 and Amazon</h6>
+                                            <h6>Your Account</h6>
+                                            <h6>Return Center</h6>
+                                            <h6>100% Purchase Protection</h6>
+                                            <h6>Help</h6>
+
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </td>
+
+                        </td>
+                    </tr>
+                    </table>
+                 </td>
+            </tr>
+            <!-- Footer Ends -->
+        </table>
+    </body>
+</html>
